@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  * {
+    @apply m-0 box-border;
+  }
+
+  html,
+  body {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-inter text-base font-normal antialiased;
+  }
+
+  .wrapper {
+    @apply container mx-auto px-4;
+  }
+
+  .btn {
+    @apply rounded-md px-3.5 py-2.5 font-medium;
+  }
+}
