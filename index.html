@@ -75,7 +75,7 @@
             href="#"
             class="inline-flex items-center gap-1 text-sm font-semibold leading-6 text-white"
           >
-            Log in
+            Sign up
             <i class="bx bx-right-arrow-alt text-xl"></i>
           </a>
         </div>
@@ -150,8 +150,9 @@
                 <a
                   href="#"
                   class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Log in</a
                 >
+                  Sign up
+                </a>
               </div>
             </div>
           </div>
@@ -176,7 +177,7 @@
                     class="inline-flex items-center gap-1 font-semibold text-white"
                   >
                     Read more
-                    <i class="bx bx-right-arrow-alt text-xl"></i>
+                    <i class="bx bx-down-arrow-alt text-xl"></i>
                   </a>
                 </div>
               </div>
@@ -202,7 +203,7 @@
                     class="inline-flex items-center text-sm font-semibold leading-6 text-white"
                   >
                     Learn more
-                    <i class="bx bx-right-arrow-alt text-xl"></i>
+                    <i class="bx bx-down-arrow-alt text-xl"></i>
                   </a>
                 </div>
               </div>
@@ -484,14 +485,104 @@
       </section>
 
       <!-- SIGN UP -->
-      <section id="hero" class=""></section>
-    </main>
-    <!-- FOOTER -->
-    <footer id="footer" class="footer">
-      <div class="wrapper">
-        <div>
-          <a href="#" class="">About</a>
+      <section
+        id="sign-up"
+        class="relative isolate overflow-hidden bg-gray-900 px-6 py-16 sm:px-16 md:py-24 lg:flex lg:gap-x-20 lg:px-24 lg:py-0"
+      >
+        <!-- GLOW CIRCLE -->
+        <svg
+          viewBox="0 0 1024 1024"
+          class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 translate-y-0 [mask-image:radial-gradient(closest-side,white,transparent)] lg:ml-0"
+          aria-hidden="true"
+        >
+          <circle
+            cx="512"
+            cy="512"
+            r="512"
+            fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+            fill-opacity="0.7"
+          />
+          <defs>
+            <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+              <stop stop-color="#7775D6" />
+              <stop offset="1" stop-color="#E935C1" />
+            </radialGradient>
+          </defs>
+        </svg>
+        <div class="wrapper px-[0px_!important]">
+          <div class="mx-auto max-w-xl text-center lg:py-32">
+            <h2
+              class="text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            >
+              Get notified when we’re launching.
+            </h2>
+            <p class="mt-2 font-normal leading-8 text-gray-300 sm:text-lg">
+              Reprehenderit ad esse et non officia in nulla. Id proident tempor
+              incididunt nostrud nulla et culpa.
+            </p>
+            <form class="mt-10 flex items-center justify-center gap-x-3">
+              <label for="email" class="block md:w-72 lg:w-80">
+                <span class="sr-only">Email address</span>
+                <input
+                  type="email"
+                  class="form-input w-full rounded-md bg-white bg-opacity-10 px-3.5 py-2.5 text-sm text-neutral-100 ring-1 ring-transparent backdrop-blur-md placeholder:text-sm placeholder:text-neutral-400 focus:border-0 focus:ring-1 focus:ring-white"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+              </label>
+              <button
+                class="btn whitespace-nowrap bg-white text-sm text-neutral-900"
+              >
+                Notify me
+              </button>
+            </form>
+          </div>
         </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="py-16">
+      <div class="wrapper space-y-10 sm:space-y-8">
+        <!-- FOOTER LINKS -->
+        <nav
+          class="grid grid-cols-2 items-center justify-center gap-y-6 sm:flex sm:gap-10"
+        >
+          <a href="#" class="cursor-pointer text-sm text-neutral-700">About</a>
+          <a href="#" class="cursor-pointer text-sm text-neutral-700">Blog</a>
+          <a href="#" class="cursor-pointer text-sm text-neutral-700">Job</a>
+          <a href="#" class="cursor-pointer text-sm text-neutral-700">Press</a>
+          <a href="#" class="cursor-pointer text-sm text-neutral-700"
+            >Accessibility</a
+          >
+          <a href="#" class="cursor-pointer text-sm text-neutral-700"
+            >Partners</a
+          >
+        </nav>
+        <!-- SOCIAL LINKS -->
+        <div class="flex items-center justify-center gap-6">
+          <a href="#" aria-label="facebook" class="text-xl">
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+          <a href="#" aria-label="instagram" class="text-xl">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="#" aria-label="twitter" class="text-xl">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="#" aria-label="github" class="text-xl">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="#" aria-label="youtube" class="text-xl">
+            <i class="bx bxl-youtube"></i>
+          </a>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <p class="text-center text-xs">
+          &copy; 2024 Your Company, Inc. All rights reserved.
+        </p>
       </div>
     </footer>
 
