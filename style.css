@@ -32,4 +32,12 @@
   h6 {
     @apply text-neutral-900;
   }
+
+  .show-menu {
+    @apply right-0;
+  }
+
+  .hide-menu {
+    @apply -right-full;
+  }
 }
