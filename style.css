@@ -13,7 +13,7 @@
   }
 
   body {
-    @apply font-inter text-base font-normal antialiased;
+    @apply font-inter text-base font-normal leading-relaxed text-neutral-500 antialiased;
   }
 
   .wrapper {
@@ -22,5 +22,14 @@
 
   .btn {
     @apply rounded-md px-3.5 py-2.5 font-medium;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-neutral-900;
   }
 }
