@@ -51,3 +51,11 @@ tabs.addEventListener("click", (e) => {
   // if(e.target)
   console.log(e, e.target, e.currentTarget, e.target.closest("button"));
 });
+
+/* =================================== */
+/* ========== FAQS ACCORDION ========= */
+/* =================================== */
+
+const accordions = document.querySelectorAll("#accordion");
+const accordionTrigger = document.querySelectorAll("#accordion-trigger");
+const panel = document.querySelectorAll("#panel");
