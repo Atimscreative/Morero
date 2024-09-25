@@ -63,8 +63,6 @@ console.log(accordions);
 /* ========== SWIPER JS ========= */
 /* =================================== */
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 1,
-  spaceBetween: 10,
   loop: true,
 
   breakpoints: {
