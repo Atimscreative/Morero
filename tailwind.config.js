@@ -2,14 +2,14 @@
 // "./**/*.{html,js}",
 
 module.exports = {
-  content: ["./index.html", "./**/*.{html,js}"],
+  content: ["./index.html", "./script.js"],
   theme: {
     extend: {
       fontFamily: {
         inter: `"Inter", sans-serif`,
       },
       backgroundImage: {
-        hero: "url('/images/hero-bg.avif')",
+        hero: "linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.5)),url('/images/excavator.jpg')",
       },
       colors: {
         main: {
