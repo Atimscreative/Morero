@@ -56,6 +56,39 @@ tabs.addEventListener("click", (e) => {
 /* ========== FAQS ACCORDION ========= */
 /* =================================== */
 
-const accordions = document.querySelectorAll("#accordion");
-const accordionTrigger = document.querySelectorAll("#accordion-trigger");
-const panel = document.querySelectorAll("#panel");
+const accordions = document.querySelectorAll(".accordion");
+console.log(accordions);
+
+/* =================================== */
+/* ========== SWIPER JS ========= */
+/* =================================== */
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 80,
+    },
+  },
+  autoplay: {
+    delay: 2000,
+  },
+});
