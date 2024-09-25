@@ -64,6 +64,8 @@ console.log(accordions);
 /* =================================== */
 const swiper = new Swiper(".swiper", {
   loop: true,
+  slidesPerView: 2,
+  spaceBetween: 30,
 
   breakpoints: {
     320: {
