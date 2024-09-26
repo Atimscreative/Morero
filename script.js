@@ -1,16 +1,13 @@
 const openModal = document.querySelector("#open"),
   closeModal = document.querySelector("#close"),
   overlay = document.querySelector("#overlay"),
-  mobileMenu = document.querySelector("#mobile-menu");
-
-const tabs = document.querySelector("[role='tablist']");
-console.log(tabs);
+  mobileMenu = document.querySelector("#mobile-menu"),
+  navLists = document.querySelector("#nav-lists"),
+  backtoTop = document.querySelector("#toTop");
 
 /* ===================================== */
-/* ===========-- FUNCTIONS --========== */
+/* ===========-- MOBILE MENU OVERLAY --========== */
 /* =================================== */
-
-// MOBILE MENU CLOSE
 function modalClose() {
   // ADD HIDE MENU CLASSNAME
   overlay.classList.add("hide-menu");
@@ -19,7 +16,6 @@ function modalClose() {
   // REMOVE SHOW MENU CLASSNAME
   overlay.classList.remove("show-menu");
   mobileMenu.classList.remove("show-menu");
-  // console.log("CLicked", ...overlay.classList);
 }
 
 function modalOpen() {
@@ -30,12 +26,7 @@ function modalOpen() {
   // ADD SHOW MENU CLASSNAME
   overlay.classList.add("show-menu");
   mobileMenu.classList.add("show-menu");
-  // console.log("CLicked", ...overlay.classList);
 }
-
-/* =================================== */
-/* =========== EVENT LISTENERS========== */
-/* =================================== */
 
 // OPEN MODAL WHEN USER CLICK MENU ICON
 openModal.addEventListener("click", modalOpen);
@@ -46,25 +37,23 @@ closeModal.addEventListener("click", modalClose);
 // CLOSE MODAL WHEN USER CLICK THE MOBILE OVERLAY
 overlay.addEventListener("click", modalClose);
 
-tabs.addEventListener("click", (e) => {
-  e.preventDefault();
-  // if(e.target)
-  console.log(e, e.target, e.currentTarget, e.target.closest("button"));
+// CLOSE MOBILE MENU WHEN USER CLICK ANY NAV LINK
+navLists.addEventListener("click", function (e) {
+  const link = e.target.closest("a");
+
+  if (!link) return;
+  modalClose();
+  console.log(link);
 });
 
 /* =================================== */
 /* ========== FAQS ACCORDION ========= */
 /* =================================== */
-
 const accordionItems = document.querySelectorAll(".accordion");
-console.log(accordionItems);
-
 accordionItems.forEach((item) => {
-  console.log(item);
-
   const button = item.querySelector(".accordion-btn");
   button.addEventListener("click", () => {
-    const icon = button.querySelector(".accordion-icon"); // Use class instead of ID
+    const icon = button.querySelector(".accordion-icon");
     const content = item.querySelector(".panel");
     const isActive = button.getAttribute("data-active") === "true";
 
@@ -104,7 +93,7 @@ accordionItems.forEach((item) => {
 });
 
 /* =================================== */
-/* ========== SWIPER JS ========= */
+/* ========== SWIPER JS (CAROUSEL) ========= */
 /* =================================== */
 const swiper = new Swiper(".swiper", {
   loop: true,
@@ -144,21 +133,35 @@ const swiper = new Swiper(".swiper", {
 /* ================================== */
 /*========== TABBED CONTENT ==========*/
 /* ================================== */
+const tabs = document.querySelectorAll(".feature-tab");
+const tabContainer = document.querySelector('[role="tablist"]');
+const tabContents = document.querySelectorAll(".feature-content");
 
 tabContainer.addEventListener("click", (e) => {
-  const tabClicked = e.target.closest(".operations-tab");
+  // TAB CLICKED
+  const tabClicked = e.target.closest(".feature-tab");
 
   if (!tabClicked) return;
 
   // ACTIVE TAB
-  tabs.forEach((tab) => tab.classList.remove("operations-tab-active"));
-  tabClicked.classList.add("operations-tab-active");
+  tabs.forEach((tab) => tab.closest(".group").classList.remove("tab-active"));
+  tabClicked.closest(".group").classList.add("tab-active");
 
   // ACTIVE CONTENT
-  tabContents.forEach((content) =>
-    content.classList.remove("operations-content-active"),
-  );
-  document
-    .querySelector(`.operations-content-${tabClicked.dataset.tab}`)
-    .classList.add("operations-content-active");
+  tabContents.forEach((content) => (content.style.display = "none"));
+  document.querySelector(
+    `#tabs-panel-${tabClicked.dataset.tab}`,
+  ).style.display = "block";
+});
+
+// BACK TO TOP
+document.addEventListener("scroll", () => {
+  if (window.scrollY >= 350) {
+    backtoTop.style.bottom = "20px";
+  } else {
+    backtoTop.style.bottom = "-40px";
+  }
+});
+backtoTop.addEventListener("click", () => {
+  document.documentElement.scrollTop = 0;
 });

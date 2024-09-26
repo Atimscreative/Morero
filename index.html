@@ -101,17 +101,17 @@
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-sm font-semibold leading-6 text-white"
-            >Product</a
+          <a href="#about" class="text-sm font-semibold leading-6 text-white"
+            >About Us</a
           >
-          <a href="#" class="text-sm font-semibold leading-6 text-white"
+          <a href="#features" class="text-sm font-semibold leading-6 text-white"
             >Features</a
           >
           <a href="#" class="text-sm font-semibold leading-6 text-white"
             >Marketplace</a
           >
-          <a href="#" class="text-sm font-semibold leading-6 text-white"
-            >Company</a
+          <a href="#faqs" class="text-sm font-semibold leading-6 text-white"
+            >FAQs</a
           >
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -163,33 +163,33 @@
             </button>
           </div>
           <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/10">
+            <div id="nav-lists" class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
                 <a
                   href="#about"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Product</a
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-neutral-50 hover:text-main-600"
+                  >About Us</a
                 >
                 <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  href="#features"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-neutral-50 hover:text-main-600"
                   >Features</a
                 >
                 <a
                   href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-neutral-50 hover:text-main-600"
                   >Marketplace</a
                 >
                 <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Company</a
+                  href="#faqs"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-neutral-50 hover:text-main-600"
+                  >FAQs</a
                 >
               </div>
               <div class="py-6">
                 <a
                   href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-neutral-50 hover:text-main-600"
                 >
                   Sign up
                 </a>
@@ -226,7 +226,7 @@
                   <!-- The Future of Construction Starts with Smarter Management -->
                   Smarter Construction Begins Here
                 </h1>
-                <p class="mt-6 text-lg leading-8 text-gray-300">
+                <p class="mt-6 text-lg leading-8 text-neutral-200">
                   Experience a new era of construction management with
                   cutting-edge software built for today&apos;s challenges.
                   Morero is the tool you need to boost collaboration, reduce
@@ -238,7 +238,7 @@
                     class="inline-flex items-center text-sm font-semibold leading-6 text-white"
                   >
                     Learn more
-                    <i class="bx bx-down-arrow-alt text-xl"></i>
+                    <i class="bx bx-down-arrow-alt animate-bounce text-xl"></i>
                   </a>
                 </div>
               </div>
@@ -543,21 +543,15 @@
               <div
                 class="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal"
                 role="tablist"
-                aria-orientation="vertical"
               >
                 <div
-                  class="group relative rounded-full bg-white px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:bg-white/10 lg:p-6 lg:ring-1 lg:ring-inset lg:ring-white/10"
+                  class="tab-active group relative rounded-full px-4 py-1 hover:bg-white/10 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-white/5"
                 >
                   <h3>
                     <button
-                      class="text-lg text-secondary-600 lg:text-white"
-                      id="tabs-tab-0"
-                      role="tab"
-                      type="button"
-                      aria-selected="true"
-                      tabindex="0"
-                      aria-controls="tabs-panel-0"
-                      data-selected=""
+                      class="feature-tab text-lg text-neutral-400 hover:text-white lg:text-white"
+                      id="tabs-tab-1"
+                      data-tab="1"
                     >
                       <span
                         class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"
@@ -565,7 +559,9 @@
                       >Project Control
                     </button>
                   </h3>
-                  <p class="mt-2 hidden text-sm text-white lg:block">
+                  <p
+                    class="mt-2 hidden text-sm text-neutral-400 group-hover:text-white lg:block"
+                  >
                     Plan and schedule your construction projects with ease.
                     Enjoy real-time project visibility, enhanced collaboration
                     with your team and clients, and reduce errors.
@@ -576,13 +572,9 @@
                 >
                   <h3>
                     <button
-                      class="text-lg text-neutral-400 hover:text-white lg:text-white"
-                      id="tabs-tab-1"
-                      role="tab"
-                      type="button"
-                      aria-selected="false"
-                      tabindex="-1"
-                      aria-controls="tabs-panel-1"
+                      class="feature-tab text-lg text-neutral-400 hover:text-white lg:text-white"
+                      id="tabs-tab-2"
+                      data-tab="2"
                     >
                       <span
                         class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"
@@ -604,13 +596,9 @@
                 >
                   <h3>
                     <button
-                      class="text-lg text-neutral-400 hover:text-white lg:text-white"
-                      id="tabs-tab-2"
-                      role="tab"
-                      type="button"
-                      aria-selected="false"
-                      tabindex="-1"
-                      aria-controls="headlessui-tabs-panel-:R3l9afja:"
+                      class="feature-tab text-lg text-neutral-400 hover:text-white lg:text-white"
+                      id="tabs-tab-3"
+                      data-tab="3"
                     >
                       <span
                         class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"
@@ -632,14 +620,9 @@
                 >
                   <h3>
                     <button
-                      class="text-lg text-neutral-400 hover:text-white lg:text-white"
-                      id="tabs-tab-3"
-                      role="tab"
-                      type="button"
-                      aria-selected="false"
-                      tabindex="-1"
-                      data-headlessui-state=""
-                      aria-controls="headlessui-tabs-panel-:R4l9afja:"
+                      class="feature-tab text-lg text-neutral-400 hover:text-white lg:text-white"
+                      id="tabs-tab-4"
+                      data-tab="4"
                     >
                       <span
                         class="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"
@@ -660,7 +643,7 @@
 
             <!-- TAB PANEL -->
             <div class="lg:col-span-7">
-              <div id="tabs-panel">
+              <div id="tabs-panel-1" class="feature-content">
                 <div class="relative sm:px-6 lg:hidden">
                   <div
                     class="absolute -inset-x-4 bottom-[-4.25rem] top-[-6.5rem] bg-white/10 ring-1 ring-inset ring-white/10 sm:inset-x-0 sm:rounded-t-xl"
@@ -691,13 +674,9 @@
                 </div>
               </div>
               <div
-                id="tabs-panel"
-                role="tabpanel"
-                tabindex="-1"
+                id="tabs-panel-2"
+                class="feature-content"
                 style="display: none"
-                data-headlessui-state=""
-                aria-labelledby="headlessui-tabs-tab-:Rad9afja:"
-                hidden=""
               >
                 <div class="relative sm:px-6 lg:hidden">
                   <div
@@ -730,13 +709,9 @@
                 </div>
               </div>
               <div
-                id="headlessui-tabs-panel-:R3l9afja:"
-                role="tabpanel"
-                tabindex="-1"
+                id="tabs-panel-3"
+                class="feature-content"
                 style="display: none"
-                data-headlessui-state=""
-                aria-labelledby="headlessui-tabs-tab-:Rbd9afja:"
-                hidden=""
               >
                 <div class="relative sm:px-6 lg:hidden">
                   <div
@@ -769,13 +744,9 @@
                 </div>
               </div>
               <div
-                id="headlessui-tabs-panel-:R4l9afja:"
-                role="tabpanel"
-                tabindex="-1"
+                id="tabs-panel-4"
+                class="feature-content"
                 style="display: none"
-                data-headlessui-state=""
-                aria-labelledby="headlessui-tabs-tab-:Rcd9afja:"
-                hidden=""
               >
                 <div class="relative sm:px-6 lg:hidden">
                   <div
@@ -963,7 +934,7 @@
               </div>
             </label>
           </div>
-          <div class="flex justify-center">
+          <div class="flex sm:justify-center">
             <button
               class="mt-10 rounded-md bg-secondary-600 px-5 py-3.5 text-sm text-white"
             >
@@ -1249,6 +1220,17 @@
           </div>
         </div>
       </section>
+
+      <!-- BACK TO TOP -->
+      <button
+        id="toTop"
+        class="group fixed -bottom-5 right-5 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-main-600 shadow-xl duration-300 hover:border hover:border-main-600 hover:bg-white"
+      >
+        <span class="sr-only">Back to top</span>
+        <i
+          class="bx bx-up-arrow-alt text-xl text-white duration-300 group-hover:text-main-600"
+        ></i>
+      </button>
     </main>
 
     <!-- FOOTER -->
