@@ -56,8 +56,52 @@ tabs.addEventListener("click", (e) => {
 /* ========== FAQS ACCORDION ========= */
 /* =================================== */
 
-const accordions = document.querySelectorAll(".accordion");
-console.log(accordions);
+const accordionItems = document.querySelectorAll(".accordion");
+console.log(accordionItems);
+
+accordionItems.forEach((item) => {
+  console.log(item);
+
+  const button = item.querySelector(".accordion-btn");
+  button.addEventListener("click", () => {
+    const icon = button.querySelector(".accordion-icon"); // Use class instead of ID
+    const content = item.querySelector(".panel");
+    const isActive = button.getAttribute("data-active") === "true";
+
+    // Close all other accordion items
+    accordionItems.forEach((i) => {
+      const otherButton = i.querySelector(".accordion-btn");
+      const otherIcon = i.querySelector(".accordion-icon");
+      const otherContent = i.querySelector(".panel");
+
+      if (i !== item) {
+        otherContent.style.maxHeight = 0;
+        otherButton.setAttribute("data-active", "false");
+        otherIcon.classList.remove("bx-minus");
+        otherIcon.classList.add("bx-plus");
+        otherContent.classList.remove("mt-4");
+      }
+    });
+
+    // Toggle the current accordion item
+    content.classList.toggle("max-h-10");
+
+    // Toggle active state and icon
+    if (!isActive) {
+      button.setAttribute("data-active", "true");
+      icon.classList.remove("bx-plus");
+      icon.classList.add("bx-minus");
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.classList.add("mt-4");
+    } else {
+      button.setAttribute("data-active", "false");
+      icon.classList.remove("bx-minus");
+      icon.classList.add("bx-plus");
+      content.style.maxHeight = 0;
+      content.classList.remove("mt-4");
+    }
+  });
+});
 
 /* =================================== */
 /* ========== SWIPER JS ========= */
@@ -88,8 +132,33 @@ const swiper = new Swiper(".swiper", {
       spaceBetween: 80,
     },
   },
+  speed: 4000,
   autoplay: {
-    delay: 2000,
+    delay: 0,
+    disableOnInteraction: false,
   },
-freemode:true,
+  freemode: true,
+  freeModeMomentum: false,
+});
+
+/* ================================== */
+/*========== TABBED CONTENT ==========*/
+/* ================================== */
+
+tabContainer.addEventListener("click", (e) => {
+  const tabClicked = e.target.closest(".operations-tab");
+
+  if (!tabClicked) return;
+
+  // ACTIVE TAB
+  tabs.forEach((tab) => tab.classList.remove("operations-tab-active"));
+  tabClicked.classList.add("operations-tab-active");
+
+  // ACTIVE CONTENT
+  tabContents.forEach((content) =>
+    content.classList.remove("operations-content-active"),
+  );
+  document
+    .querySelector(`.operations-content-${tabClicked.dataset.tab}`)
+    .classList.add("operations-content-active");
 });
