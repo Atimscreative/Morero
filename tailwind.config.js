@@ -9,7 +9,7 @@ module.exports = {
         inter: `"Inter", sans-serif`,
       },
       backgroundImage: {
-        hero: "linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.5)),url('/images/excavator.jpg')",
+        hero: "linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.5)),url('/images/excavator.webp')",
       },
       colors: {
         main: {
