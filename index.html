@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/logo/favicon.svg"
+      type="image/x-icon"
+    />
     <!-- Primary Meta Tags -->
     <title>Morero — Smarter Construction Begins Here</title>
     <meta name="title" content="Morero — Smarter Construction Begins Here" />
@@ -74,7 +79,11 @@
       <nav class="wrapper flex items-center justify-between">
         <div class="flex lg:flex-1">
           <a href="/" class="-m-1.5 p-1.5">
-            <img class="h-8 w-auto" src="images/logo.png" alt="logo" />
+            <img
+              class="w-[130px]"
+              src="images/logo/morero-full-white-orange.svg"
+              alt="logo"
+            />
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -138,7 +147,11 @@
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Morero</span>
-              <img class="h-8 w-auto" src="images/logo.png" alt="" />
+              <img
+                class="h-12 w-auto"
+                src="images/logo/morero-short-orange.svg"
+                alt="morero logo"
+              />
             </a>
             <button
               id="close"
@@ -212,9 +225,9 @@
             <div
               class="mx-auto max-w-2xl py-32 sm:py-32 lg:text-balance xl:py-36"
             >
-              <div class="hidden sm:mb-5 sm:flex sm:justify-center">
+              <div class="hidden sm:mb-2 sm:flex sm:justify-center">
                 <div
-                  class="relative rounded-full px-3 py-1 text-center text-sm leading-6 tracking-wider text-neutral-200 ring-1 ring-neutral-200"
+                  class="relative rounded-full bg-main-600 px-3 py-1 text-center text-sm leading-6 tracking-wider text-neutral-100"
                 >
                   PLAN. MANAGE. BUILD.
                 </div>
@@ -270,13 +283,16 @@
         <div
           class="mx-auto flex max-w-6xl flex-col-reverse items-center gap-16 px-4 md:flex-col"
         >
-          <img
-            src="images/screenshot.png"
-            alt="Product screenshot"
+          <video
             class="max-w-full rounded-xl shadow-xl ring-1 ring-gray-400/10 lg:object-cover lg:object-left"
             width="2432"
             height="1442"
-          />
+            autoplay
+            muted
+            loop
+          >
+            <source src="images/Dashboard.mp4" />
+          </video>
         </div>
         <div class="relative mt-12">
           <div
@@ -1285,7 +1301,7 @@
           <button
             class="btn whitespace-nowrap bg-white text-sm text-neutral-900"
           >
-            Notify me
+            Join now
           </button>
         </form>
       </div>
