@@ -64,12 +64,6 @@
       rel="stylesheet"
     />
 
-    <!-- SWIPER CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -80,8 +74,8 @@
         <div class="flex lg:flex-1">
           <a href="/" class="-m-1.5 p-1.5">
             <img
-              class="w-[130px]"
-              src="images/logo/morero-full-white-orange.svg"
+              class="w-[50px]"
+              src="images/logo/morero-short-white.svg"
               alt="logo"
             />
           </a>
@@ -142,21 +136,21 @@
         ></div>
         <div
           id="mobile-menu"
-          class="hide-menu fixed inset-y-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 duration-300 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+          class="hide-menu fixed inset-y-0 z-50 w-full overflow-y-auto bg-neutral-900 px-6 py-6 duration-300 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
         >
           <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
+            <a href="/" class="-m-1.5 p-1.5">
               <span class="sr-only">Morero</span>
               <img
-                class="h-12 w-auto"
-                src="images/logo/morero-short-orange.svg"
+                class="h-6 w-auto"
+                src="images/logo/morero-text-orange.svg"
                 alt="morero logo"
               />
             </a>
             <button
               id="close"
               type="button"
-              class="-m-2.5 rounded-md p-2.5 text-gray-700"
+              class="-m-2.5 rounded-md p-2.5 text-neutral-100"
             >
               <span class="sr-only">Close menu</span>
               <svg
@@ -175,34 +169,34 @@
               </svg>
             </button>
           </div>
-          <div class="mt-6 flow-root">
-            <div id="nav-lists" class="-my-6 divide-y divide-gray-500/10">
+          <div class="mt-10 flow-root">
+            <div id="nav-lists" class="-my-6 divide-y divide-neutral-400/10">
               <div class="space-y-2 py-6">
                 <a
                   href="#about"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-neutral-50 hover:text-main-600"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-neutral-100 hover:bg-neutral-800/40 hover:text-main-500"
                   >About Us</a
                 >
                 <a
                   href="#features"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-neutral-50 hover:text-main-600"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-neutral-100 hover:bg-neutral-800/40 hover:text-main-500"
                   >Features</a
                 >
                 <a
                   href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-neutral-50 hover:text-main-600"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-neutral-100 hover:bg-neutral-800/40 hover:text-main-500"
                   >Marketplace</a
                 >
                 <a
                   href="#faqs"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-neutral-50 hover:text-main-600"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-neutral-100 hover:bg-neutral-800/40 hover:text-main-500"
                   >FAQs</a
                 >
               </div>
               <div class="py-6">
                 <a
                   href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-neutral-50 hover:text-main-600"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-neutral-100 hover:bg-neutral-800/40 hover:text-main-500"
                 >
                   Sign up
                 </a>
@@ -218,7 +212,7 @@
       <!-- HERO -->
       <section
         id="hero"
-        class="min-h-svh w-full bg-hero bg-cover bg-center lg:h-screen"
+        class="min-h-svh w-full bg-hero bg-cover bg-center sm:min-h-[60vh] lg:h-screen"
       >
         <div class="wrapper">
           <div class="relative isolate px-6 pt-14 lg:px-8">
@@ -227,14 +221,14 @@
             >
               <div class="hidden sm:mb-2 sm:flex sm:justify-center">
                 <div
-                  class="relative rounded-full bg-main-600 px-3 py-1 text-center text-sm leading-6 tracking-wider text-neutral-100"
+                  class="relative rounded-full bg-main-500 px-3 py-1 text-center text-sm leading-6 tracking-wider text-neutral-100"
                 >
                   PLAN. MANAGE. BUILD.
                 </div>
               </div>
               <div class="text-center">
                 <h1
-                  class="text-[2.5rem] font-bold leading-tight tracking-tight text-white sm:text-5xl sm:leading-[1.3]"
+                  class="text-[2.5rem] font-bold leading-tight tracking-tight text-white sm:text-5xl sm:leading-[1.3] md:text-6xl md:leading-tight"
                 >
                   <!-- The Future of Construction Starts with Smarter Management -->
                   Smarter Construction Begins Here
@@ -264,7 +258,7 @@
       <section id="benefits" class="overflow-hidden bg-white py-24 sm:py-32">
         <div class="mx-auto mb-10 max-w-2xl px-4">
           <p
-            class="text-center text-base font-semibold leading-7 text-secondary-600"
+            class="text-center text-base font-semibold leading-7 text-main-500"
           >
             Build better
           </p>
@@ -307,7 +301,7 @@
               <!-- USER_1 -->
               <div class="grid grid-cols-[24px_1fr] gap-4">
                 <span
-                  class="inline-flex h-7 w-7 translate-y-2 items-center justify-center fill-secondary-600"
+                  class="inline-flex h-7 w-7 translate-y-2 items-center justify-center fill-main-500"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                     <path
@@ -334,7 +328,7 @@
               <!-- USER_2 -->
               <div class="grid grid-cols-[24px_1fr] gap-4">
                 <span
-                  class="inline-flex h-6 w-6 translate-y-2 items-center justify-center fill-secondary-600"
+                  class="inline-flex h-6 w-6 translate-y-2 items-center justify-center fill-main-500"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
@@ -353,7 +347,7 @@
               <!-- USER_3 -->
               <div class="grid grid-cols-[24px_1fr] gap-4">
                 <span
-                  class="inline-flex h-6 w-6 translate-y-2 items-center justify-center fill-secondary-600"
+                  class="inline-flex h-6 w-6 translate-y-2 items-center justify-center fill-main-500"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
@@ -374,7 +368,7 @@
               <!-- USER_4 -->
               <div class="grid grid-cols-[24px_1fr] gap-4">
                 <span
-                  class="inline-flex h-6 w-6 translate-y-2 items-center justify-center fill-secondary-600"
+                  class="inline-flex h-6 w-6 translate-y-2 items-center justify-center fill-main-500"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
@@ -395,113 +389,123 @@
       </section>
 
       <!-- TRUESTED PARTNERS -->
-      <section id="partners" class="bg-white pb-16 pt-10">
-        <div class="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2
-            class="mb-8 text-center text-lg font-semibold leading-8 text-gray-900"
-          >
+      <section id="partners" class="bg-white pb-24 pt-10 sm:pb-32">
+        <div class="relative mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 class="text-center text-lg font-semibold leading-7 text-gray-900">
             Built by chartered construction professionals
           </h2>
-          <div class="hidden w-full overflow-x-auto no-scrollbar">
-            <div
-              class="mx-auto mt-10 flex max-w-lg items-center gap-x-8 gap-y-10 sm:max-w-xl sm:gap-x-10 lg:mx-0 lg:max-w-none"
-            >
-              <img
-                class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="images/ciob.png"
-                alt="ciob"
-                width="158"
-                height="48"
-              />
-              <img
-                class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="images/riba-logo-final.png"
-                alt="riba"
-                width="158"
-                height="48"
-              />
-              <img
-                class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="images/rics.png"
-                alt="rics"
-                width="158"
-                height="48"
-              />
-              <img
-                class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                src="images/ice.png"
-                alt="ice"
-                width="158"
-                height="48"
-              />
-              <img
-                class="col-span-2 col-start-2 max-h-12 w-40 object-contain grayscale-[1] sm:col-start-auto lg:col-span-1"
-                src="images/istructE.png"
-                alt="istructE"
-                width="158"
-                height="48"
-              />
-              <img
-                class="col-span-2 max-h-12 w-full object-contain grayscale-[1] sm:col-start-2 lg:col-span-1"
-                src="images/nhbc-logo.svg"
-                alt="ice"
-                width="158"
-                height="48"
-              />
-            </div>
-          </div>
 
-          <div class="swiper">
-            <div class="swiper-wrapper items-center">
-              <!-- Slides -->
-              <div class="swiper-slide">
+          <div class="relative mt-10 flex items-center overflow-x-hidden">
+            <div
+              class="animate-marquee flex items-center gap-9 whitespace-nowrap *:w-[140px]"
+            >
+              <div class="">
                 <img
-                  class="max-h-12 w-full object-contain lg:col-span-1"
+                  class="max-h-12 w-full object-contain"
                   src="images/ciob.png"
                   alt="ciob"
                   width="158"
                   height="48"
                 />
               </div>
-              <div class="swiper-slide">
+              <div class="">
                 <img
-                  class="max-h-12 w-full object-contain lg:col-span-1"
+                  class="max-h-12 w-full object-contain"
                   src="images/riba-logo-final.png"
                   alt="riba"
                   width="158"
                   height="48"
                 />
               </div>
-              <div class="swiper-slide">
+              <div class="">
                 <img
-                  class="max-h-12 w-full object-contain lg:col-span-1"
+                  class="max-h-12 w-full object-contain"
                   src="images/rics.png"
                   alt="rics"
                   width="158"
                   height="48"
                 />
               </div>
-              <div class="swiper-slide">
+              <div class="">
                 <img
-                  class="max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+                  class="max-h-12 w-full object-contain"
                   src="images/ice.png"
                   alt="ice"
                   width="158"
                   height="48"
                 />
               </div>
-              <div class="swiper-slide">
+              <div class="">
                 <img
-                  class="col-start-2 max-h-12 w-40 object-contain grayscale-[1] sm:col-start-auto lg:col-span-1"
+                  class="max-h-12 w-40 object-contain grayscale-[1]"
                   src="images/istructE.png"
                   alt="istructE"
                   width="158"
                   height="48"
                 />
               </div>
-              <div class="swiper-slide">
+              <div class="">
                 <img
-                  class="max-h-12 w-full object-contain grayscale-[1] sm:col-start-2 lg:col-span-1"
+                  class="max-h-12 w-full scale-75 object-contain grayscale-[1]"
+                  src="images/nhbc-logo.svg"
+                  alt="ice"
+                  width="158"
+                  height="48"
+                />
+              </div>
+            </div>
+
+            <div
+              class="animate-marquee2 absolute top-0 flex items-center gap-9 whitespace-nowrap pl-9 *:w-[140px]"
+            >
+              <div class="">
+                <img
+                  class="max-h-12 w-full object-contain"
+                  src="images/ciob.png"
+                  alt="ciob"
+                  width="158"
+                  height="48"
+                />
+              </div>
+              <div class="">
+                <img
+                  class="max-h-12 w-full object-contain"
+                  src="images/riba-logo-final.png"
+                  alt="riba"
+                  width="158"
+                  height="48"
+                />
+              </div>
+              <div class="">
+                <img
+                  class="max-h-12 w-full object-contain"
+                  src="images/rics.png"
+                  alt="rics"
+                  width="158"
+                  height="48"
+                />
+              </div>
+              <div class="">
+                <img
+                  class="max-h-12 w-full object-contain"
+                  src="images/ice.png"
+                  alt="ice"
+                  width="158"
+                  height="48"
+                />
+              </div>
+              <div class="">
+                <img
+                  class="max-h-12 w-40 object-contain grayscale-[1]"
+                  src="images/istructE.png"
+                  alt="istructE"
+                  width="158"
+                  height="48"
+                />
+              </div>
+              <div class="">
+                <img
+                  class="max-h-12 w-full object-contain grayscale-[1]"
                   src="images/nhbc-logo.svg"
                   alt="ice"
                   width="158"
@@ -510,38 +514,26 @@
               </div>
             </div>
           </div>
+
+          <div
+            class="pointer-events-none absolute bottom-12 left-0 block h-14 w-1/3 bg-gradient-to-r from-white from-15%"
+          ></div>
+          <div
+            class="pointer-events-none absolute bottom-12 right-0 block h-14 w-1/3 bg-gradient-to-l from-white from-15%"
+          ></div>
         </div>
       </section>
 
       <!-- FEATURES -->
       <section
         id="features"
-        class="relative w-full overflow-hidden bg-neutral-900 py-16"
+        class="relative w-full overflow-hidden bg-neutral-900 py-24 sm:py-32"
       >
-        <svg
-          viewBox="0 0 1024 1024"
-          class="absolute left-0 top-0 z-0 hidden h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] md:block lg:ml-0"
-          aria-hidden="true"
-        >
-          <circle
-            cx="512"
-            cy="512"
-            r="512"
-            fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-            fill-opacity="0.5"
-          />
-          <defs>
-            <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-              <stop stop-color="#214e4a" />
-              <stop offset="1" stop-color="#29786f" />
-            </radialGradient>
-          </defs>
-        </svg>
         <div class="wrapper relative z-[1]">
           <!-- HEADING -->
           <div class="max-w-xl md:mx-auto md:text-center xl:max-w-none">
             <h2
-              class="text-3xl font-medium tracking-tight text-white sm:text-4xl md:text-5xl md:leading-tight"
+              class="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl md:leading-tight"
             >
               Spend More Time On The Important Things!
             </h2>
@@ -563,7 +555,7 @@
                 role="tablist"
               >
                 <div
-                  class="tab-active group relative rounded-full px-4 py-1 hover:bg-white/10 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-white/5"
+                  class="tab-active group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-white/5"
                 >
                   <h3>
                     <button
@@ -586,7 +578,7 @@
                   </p>
                 </div>
                 <div
-                  class="group relative rounded-full px-4 py-1 hover:bg-white/10 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-white/5"
+                  class="group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-white/5"
                 >
                   <h3>
                     <button
@@ -610,7 +602,7 @@
                   </p>
                 </div>
                 <div
-                  class="group relative rounded-full px-4 py-1 hover:bg-white/10 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-white/5"
+                  class="group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-white/5"
                 >
                   <h3>
                     <button
@@ -634,7 +626,7 @@
                   </p>
                 </div>
                 <div
-                  class="group relative rounded-full px-4 py-1 hover:bg-white/10 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-white/5"
+                  class="group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6 lg:hover:bg-white/5"
                 >
                   <h3>
                     <button
@@ -675,7 +667,7 @@
                   </p>
                 </div>
                 <div
-                  class="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-secondary-800/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]"
+                  class="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-neutral-950/80 sm:w-auto lg:mt-0 lg:w-[67.8125rem]"
                 >
                   <img
                     alt="payroll"
@@ -710,7 +702,7 @@
                   </p>
                 </div>
                 <div
-                  class="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-secondary-800/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]"
+                  class="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-neutral-950/80 sm:w-auto lg:mt-0 lg:w-[67.8125rem]"
                 >
                   <img
                     alt="payroll"
@@ -745,7 +737,7 @@
                   </p>
                 </div>
                 <div
-                  class="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-secondary-800/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]"
+                  class="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-neutral-950/80 sm:w-auto lg:mt-0 lg:w-[67.8125rem]"
                 >
                   <img
                     alt="payroll"
@@ -779,7 +771,7 @@
                   </p>
                 </div>
                 <div
-                  class="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-secondary-800/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]"
+                  class="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-neutral-950/80 sm:w-auto lg:mt-0 lg:w-[67.8125rem]"
                 >
                   <img
                     alt="payroll"
@@ -804,7 +796,7 @@
       <section id="integrations" class="bg-neutral-900 py-16 sm:py-32">
         <div class="mx-auto max-w-5xl px-4">
           <h2
-            class="mb-10 text-center text-base uppercase leading-8 text-neutral-100"
+            class="mb-10 text-balance text-center text-lg uppercase leading-7 text-neutral-100"
           >
             Integrated with the worlds most trusted apps
           </h2>
@@ -873,13 +865,15 @@
       <!-- POLLING -->
       <section
         id="polling"
-        class="relative overflow-hidden px-4 py-16 sm:px-16 md:py-24 lg:flex lg:justify-center lg:gap-x-20 lg:px-24"
+        class="relative overflow-hidden px-4 py-24 sm:px-16 md:py-32 lg:flex lg:justify-center lg:gap-x-20 lg:px-24"
       >
         <div class="max-w-2xl">
           <p class="mb-2 text-balance text-neutral-500 sm:text-center">
             Help Shape Our New Construction Management Tool
           </p>
-          <h2 class="text-3xl font-semibold text-neutral-900 sm:text-center">
+          <h2
+            class="text-3xl font-bold tracking-tight text-neutral-900 sm:text-center"
+          >
             What feature is most critical for you in a construction project
             management software?
           </h2>
@@ -887,14 +881,14 @@
           <div class="mt-10 grid gap-6 md:grid-cols-2">
             <label for="feature-1" class="group inline-block">
               <div
-                class="flex w-full items-center gap-3 rounded-md border-2 border-neutral-300 bg-white bg-opacity-20 px-4 py-4 duration-300 focus-within:border-2 group-has-[input:checked]:border-secondary-600 group-has-[input:checked]:shadow-lg group-has-[input:checked]:shadow-secondary-500/20"
+                class="flex w-full items-center gap-3 rounded-md border-2 border-neutral-300 bg-white bg-opacity-20 px-4 py-4 duration-300 focus-within:border-2 group-has-[input:checked]:border-main-500 group-has-[input:checked]:shadow-lg group-has-[input:checked]:shadow-main-500/20"
               >
                 <input
                   type="radio"
                   name="feature"
                   value="Collaboration tools"
                   id="feature-1"
-                  class="form-radio h-5 w-5 border-2 border-neutral-300 bg-transparent checked:bg-secondary-600 checked:outline-none checked:ring-2 checked:ring-white checked:hover:bg-secondary-500 checked:focus:bg-secondary-600 checked:focus:ring-0 checked:focus:ring-white"
+                  class="form-radio h-5 w-5 border-2 border-neutral-300 bg-transparent checked:bg-main-500 checked:outline-none checked:ring-2 checked:ring-white checked:hover:bg-main-500 checked:focus:bg-main-500 checked:focus:ring-0 checked:focus:ring-white"
                 />
 
                 <p class="font-medium text-neutral-700">
@@ -904,14 +898,14 @@
             </label>
             <label for="feature-2" class="group inline-block">
               <div
-                class="flex w-full items-center gap-3 rounded-md border-2 border-neutral-300 bg-white bg-opacity-20 px-4 py-4 duration-300 focus-within:border-2 group-has-[input:checked]:border-secondary-600 group-has-[input:checked]:shadow-lg group-has-[input:checked]:shadow-secondary-500/20"
+                class="flex w-full items-center gap-3 rounded-md border-2 border-neutral-300 bg-white bg-opacity-20 px-4 py-4 duration-300 focus-within:border-2 group-has-[input:checked]:border-main-500 group-has-[input:checked]:shadow-lg group-has-[input:checked]:shadow-main-500/20"
               >
                 <input
                   type="radio"
                   name="feature"
                   value="Collaboration tools"
                   id="feature-2"
-                  class="form-radio h-5 w-5 border-2 border-neutral-300 bg-transparent checked:bg-secondary-600 checked:outline-none checked:ring-2 checked:ring-white checked:hover:bg-secondary-500 checked:focus:bg-secondary-600 checked:focus:ring-0 checked:focus:ring-white"
+                  class="form-radio h-5 w-5 border-2 border-neutral-300 bg-transparent checked:bg-main-500 checked:outline-none checked:ring-2 checked:ring-white checked:hover:bg-main-500 checked:focus:bg-main-500 checked:focus:ring-0 checked:focus:ring-white"
                 />
 
                 <p class="font-medium text-neutral-700">
@@ -921,14 +915,14 @@
             </label>
             <label for="feature-3" class="group inline-block">
               <div
-                class="flex w-full items-center gap-3 rounded-md border-2 border-neutral-300 bg-white bg-opacity-20 px-4 py-4 duration-300 focus-within:border-2 group-has-[input:checked]:border-secondary-600 group-has-[input:checked]:shadow-lg group-has-[input:checked]:shadow-secondary-500/20"
+                class="flex w-full items-center gap-3 rounded-md border-2 border-neutral-300 bg-white bg-opacity-20 px-4 py-4 duration-300 focus-within:border-2 group-has-[input:checked]:border-main-500 group-has-[input:checked]:shadow-lg group-has-[input:checked]:shadow-main-500/20"
               >
                 <input
                   type="radio"
                   name="feature"
                   value="Collaboration tools"
                   id="feature-3"
-                  class="form-radio h-5 w-5 border-2 border-neutral-300 bg-transparent checked:bg-secondary-600 checked:outline-none checked:ring-2 checked:ring-white checked:hover:bg-secondary-500 checked:focus:bg-secondary-600 checked:focus:ring-0 checked:focus:ring-white"
+                  class="form-radio h-5 w-5 border-2 border-neutral-300 bg-transparent checked:bg-main-500 checked:outline-none checked:ring-2 checked:ring-white checked:hover:bg-main-500 checked:focus:bg-main-500 checked:focus:ring-0 checked:focus:ring-white"
                 />
 
                 <p class="font-medium text-neutral-700">Document management</p>
@@ -936,14 +930,14 @@
             </label>
             <label for="feature-4" class="group inline-block">
               <div
-                class="flex w-full items-center gap-3 rounded-md border-2 border-neutral-300 bg-white bg-opacity-20 px-4 py-4 duration-300 focus-within:border-2 group-has-[input:checked]:border-secondary-600 group-has-[input:checked]:shadow-lg group-has-[input:checked]:shadow-secondary-500/20"
+                class="flex w-full items-center gap-3 rounded-md border-2 border-neutral-300 bg-white bg-opacity-20 px-4 py-4 duration-300 focus-within:border-2 group-has-[input:checked]:border-main-500 group-has-[input:checked]:shadow-lg group-has-[input:checked]:shadow-main-500/20"
               >
                 <input
                   type="radio"
                   name="feature"
                   value="Collaboration tools"
                   id="feature-4"
-                  class="form-radio h-5 w-5 border-2 border-neutral-300 bg-transparent checked:bg-secondary-600 checked:outline-none checked:ring-2 checked:ring-white checked:hover:bg-secondary-500 checked:focus:bg-secondary-600 checked:focus:ring-0 checked:focus:ring-white"
+                  class="form-radio h-5 w-5 border-2 border-neutral-300 bg-transparent checked:bg-main-500 checked:outline-none checked:ring-2 checked:ring-white checked:hover:bg-main-500 checked:focus:bg-main-500 checked:focus:ring-0 checked:focus:ring-white"
                 />
 
                 <p class="font-medium text-neutral-700">
@@ -954,7 +948,7 @@
           </div>
           <div class="flex sm:justify-center">
             <button
-              class="mt-10 rounded-md bg-secondary-600 px-5 py-3.5 text-sm text-white"
+              class="mt-10 rounded-md bg-main-500 px-5 py-3.5 text-sm text-white"
             >
               Submit your vote
             </button>
@@ -965,7 +959,7 @@
       <!-- CALL TO ACTION -->
       <section
         id="cta"
-        class="relative isolate overflow-hidden bg-neutral-900 px-4 py-16 sm:px-20 md:py-24 lg:flex lg:flex-col lg:justify-center lg:gap-x-20"
+        class="relative isolate overflow-hidden bg-neutral-900 px-4 py-24 sm:px-20 md:py-32 lg:flex lg:flex-col lg:justify-center lg:gap-x-20"
       >
         <!-- GLOW CIRCLE -->
         <svg
@@ -1012,7 +1006,7 @@
               />
             </label>
             <button
-              class="btn whitespace-nowrap bg-white text-sm text-neutral-900"
+              class="btn whitespace-nowrap bg-white text-sm text-main-500"
             >
               Join now
             </button>
@@ -1021,13 +1015,13 @@
       </section>
 
       <!-- ABOUT -->
-      <section id="about" class="py-16">
+      <section id="about" class="py-24 sm:py-32">
         <div
           class="mx-auto grid max-w-4xl justify-between gap-10 px-4 md:items-center md:gap-16 lg:max-w-5xl lg:grid-cols-[1.5fr_320px]"
         >
           <div>
             <h2 class="mb-6 text-3xl font-bold md:text-4xl">Our mission</h2>
-            <p class="text-lg leading-loose">
+            <p class="text-base leading-loose md:text-lg">
               We're a forward-thinking team of construction professional poised
               to drive the change the industry needs. We&apos;re challenging how
               construction projects are planned, managed and delivered. In 2023
@@ -1036,12 +1030,12 @@
               approach simply doesn&apos;t work.
             </p>
 
-            <p class="my-10 text-base leading-loose">
+            <p class="my-10 text-base leading-loose md:text-lg">
               But we see this as an opportunity—to rethink, redesign, and build
               something better.
             </p>
 
-            <p class="text-base leading-loose">
+            <p class="text-base leading-loose md:text-lg">
               Our cutting-edge software is built to address the challenges of
               today&apos;s industry. We&apos;re building a smarter, more
               efficient future for construction.
@@ -1052,7 +1046,7 @@
           <div class="inline-flex flex-col space-y-8">
             <div class="inline-grid gap-2">
               <h3
-                class="inline-block text-4xl font-semibold text-secondary-600 sm:text-5xl"
+                class="inline-block text-4xl font-semibold text-main-500 sm:text-5xl"
               >
                 44 million
               </h3>
@@ -1062,7 +1056,7 @@
             </div>
             <div class="inline-grid gap-2">
               <h3
-                class="inline-block text-4xl font-semibold text-secondary-600 sm:text-5xl"
+                class="inline-block text-4xl font-semibold text-main-500 sm:text-5xl"
               >
                 760 Million
               </h3>
@@ -1070,7 +1064,7 @@
             </div>
             <div class="inline-grid gap-2">
               <h3
-                class="inline-block text-4xl font-semibold text-secondary-600 sm:text-5xl"
+                class="inline-block text-4xl font-semibold text-main-500 sm:text-5xl"
               >
                 33 Thousand
               </h3>
@@ -1083,7 +1077,7 @@
       </section>
 
       <!-- FAQS -->
-      <section id="faqs" class="py-16 md:py-24">
+      <section id="faqs" class="py-24 md:py-32">
         <div class="mx-auto max-w-3xl px-4 lg:max-w-4xl xl:max-w-5xl">
           <h2 class="text-2xl font-semibold">Frequently asked questions</h2>
 
@@ -1091,16 +1085,16 @@
             <div class="accordion border-t border-neutral-200 pt-6">
               <button
                 data-active="false"
-                class="accordion-btn group flex w-full cursor-pointer items-center justify-between *:data-[active=true]:text-secondary-600"
+                class="accordion-btn group flex w-full cursor-pointer items-center justify-between *:data-[active=true]:text-main-500"
               >
                 <span
-                  class="text-left font-medium text-neutral-900 group-hover:text-secondary-600"
+                  class="text-left font-medium text-neutral-900 group-hover:text-main-500"
                 >
                   What is Morero?
                 </span>
                 <span
                   ><i
-                    class="accordion-icon bx bx-plus text-2xl group-hover:text-secondary-600"
+                    class="accordion-icon bx bx-plus text-2xl group-hover:text-main-500"
                   ></i
                 ></span>
               </button>
@@ -1115,14 +1109,16 @@
             <div class="accordion group border-t border-neutral-200 pt-6">
               <button
                 data-active="false"
-                class="accordion-btn group flex w-full cursor-pointer items-center justify-between *:data-[active=true]:text-secondary-600"
+                class="accordion-btn group flex w-full cursor-pointer items-center justify-between *:data-[active=true]:text-main-500"
               >
-                <span class="text-left font-medium text-neutral-900">
+                <span
+                  class="text-left font-medium text-neutral-900 group-hover:text-main-500"
+                >
                   What are the benefits of using Morero?
                 </span>
                 <span
                   ><i
-                    class="accordion-icon bx bx-plus text-2xl group-hover:text-secondary-600"
+                    class="accordion-icon bx bx-plus text-2xl group-hover:text-main-500"
                   ></i
                 ></span>
               </button>
@@ -1151,14 +1147,16 @@
             <div class="accordion group border-t border-neutral-200 pt-6">
               <button
                 data-active="false"
-                class="accordion-btn group flex w-full cursor-pointer items-center justify-between *:data-[active=true]:text-secondary-600"
+                class="accordion-btn group flex w-full cursor-pointer items-center justify-between *:data-[active=true]:text-main-500"
               >
-                <span class="text-left font-medium text-neutral-900">
+                <span
+                  class="text-left font-medium text-neutral-900 group-hover:text-main-500"
+                >
                   How much does Morero cost?
                 </span>
                 <span
                   ><i
-                    class="accordion-icon bx bx-plus text-2xl group-hover:text-secondary-600"
+                    class="accordion-icon bx bx-plus text-2xl group-hover:text-main-500"
                   ></i
                 ></span>
               </button>
@@ -1172,14 +1170,16 @@
             <div class="accordion group border-t border-neutral-200 pt-6">
               <button
                 data-active="false"
-                class="accordion-btn group flex w-full cursor-pointer items-center justify-between *:data-[active=true]:text-secondary-600"
+                class="accordion-btn group flex w-full cursor-pointer items-center justify-between *:data-[active=true]:text-main-500"
               >
-                <span class="text-left font-medium text-neutral-900">
+                <span
+                  class="text-left font-medium text-neutral-900 group-hover:text-main-500"
+                >
                   How do I sign up for Morero?
                 </span>
                 <span
                   ><i
-                    class="accordion-icon bx bx-plus text-2xl group-hover:text-secondary-600"
+                    class="accordion-icon bx bx-plus text-2xl group-hover:text-main-500"
                   ></i
                 ></span>
               </button>
@@ -1196,14 +1196,16 @@
             <div class="accordion group border-t border-neutral-200 pt-6">
               <button
                 data-active="false"
-                class="accordion-btn group flex w-full cursor-pointer items-center justify-between *:data-[active=true]:text-secondary-600"
+                class="accordion-btn group flex w-full cursor-pointer items-center justify-between *:data-[active=true]:text-main-500"
               >
-                <span class="text-left font-medium text-neutral-900">
+                <span
+                  class="text-left font-medium text-neutral-900 group-hover:text-main-500"
+                >
                   What are the system requirements for Morero?
                 </span>
                 <span
                   ><i
-                    class="accordion-icon bx bx-plus text-2xl group-hover:text-secondary-600"
+                    class="accordion-icon bx bx-plus text-2xl group-hover:text-main-500"
                   ></i
                 ></span>
               </button>
@@ -1217,14 +1219,16 @@
             <div class="accordion group border-t border-neutral-200 pt-6">
               <button
                 data-active="false"
-                class="accordion-btn group flex w-full cursor-pointer items-center justify-between *:data-[active=true]:text-secondary-600"
+                class="accordion-btn group flex w-full cursor-pointer items-center justify-between *:data-[active=true]:text-main-500"
               >
-                <span class="text-left font-medium text-neutral-900">
+                <span
+                  class="text-left font-medium text-neutral-900 group-hover:text-main-500"
+                >
                   How do I get support for Morero?
                 </span>
                 <span
                   ><i
-                    class="accordion-icon bx bx-plus text-2xl group-hover:text-secondary-600"
+                    class="accordion-icon bx bx-plus text-2xl group-hover:text-main-500"
                   ></i
                 ></span>
               </button>
@@ -1242,11 +1246,11 @@
       <!-- BACK TO TOP -->
       <button
         id="toTop"
-        class="group fixed -bottom-5 right-5 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-main-600 shadow-xl duration-300 hover:border hover:border-main-600 hover:bg-white"
+        class="group fixed right-5 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-main-500 shadow-xl duration-300 hover:border hover:border-main-500 hover:bg-white"
       >
         <span class="sr-only">Back to top</span>
         <i
-          class="bx bx-up-arrow-alt text-xl text-white duration-300 group-hover:text-main-600"
+          class="bx bx-up-arrow-alt text-xl text-white duration-300 group-hover:text-main-500"
         ></i>
       </button>
     </main>
@@ -1254,7 +1258,7 @@
     <!-- FOOTER -->
     <footer
       id="footer"
-      class="relative isolate overflow-hidden bg-neutral-900 px-4 py-16 sm:px-20 md:py-24 lg:flex lg:flex-col lg:justify-center lg:gap-x-20"
+      class="relative isolate overflow-hidden bg-neutral-900 px-4 py-24 sm:px-20 md:py-32 lg:flex lg:flex-col lg:justify-center lg:gap-x-20"
     >
       <!-- GLOW CIRCLE -->
       <svg
@@ -1300,9 +1304,7 @@
               autocomplete="off"
             />
           </label>
-          <button
-            class="btn whitespace-nowrap bg-white text-sm text-neutral-900"
-          >
+          <button class="btn whitespace-nowrap bg-white text-sm text-main-500">
             Join now
           </button>
         </form>
@@ -1333,35 +1335,35 @@
           <a
             href="#"
             aria-label="facebook"
-            class="inline-flex h-6 w-6 items-center justify-center rounded-full text-xl text-neutral-300 duration-300 hover:bg-white hover:text-secondary-800"
+            class="inline-flex h-6 w-6 items-center justify-center rounded-full text-xl text-neutral-300 duration-300 hover:bg-white hover:text-main-800"
           >
             <i class="bx bxl-facebook-circle"></i>
           </a>
           <a
             href="#"
             aria-label="instagram"
-            class="inline-flex h-6 w-6 items-center justify-center rounded-full text-xl text-neutral-300 duration-300 hover:bg-white hover:text-secondary-800"
+            class="inline-flex h-6 w-6 items-center justify-center rounded-full text-xl text-neutral-300 duration-300 hover:bg-white hover:text-main-800"
           >
             <i class="bx bxl-instagram"></i>
           </a>
           <a
             href="#"
             aria-label="twitter"
-            class="inline-flex h-6 w-6 items-center justify-center rounded-full text-xl text-neutral-300 duration-300 hover:bg-white hover:text-secondary-800"
+            class="inline-flex h-6 w-6 items-center justify-center rounded-full text-xl text-neutral-300 duration-300 hover:bg-white hover:text-main-800"
           >
             <i class="bx bxl-twitter"></i>
           </a>
           <a
             href="#"
             aria-label="github"
-            class="inline-flex h-6 w-6 items-center justify-center rounded-full text-xl text-neutral-300 duration-300 hover:bg-white hover:text-secondary-800"
+            class="inline-flex h-6 w-6 items-center justify-center rounded-full text-xl text-neutral-300 duration-300 hover:bg-white hover:text-main-800"
           >
             <i class="bx bxl-github"></i>
           </a>
           <a
             href="#"
             aria-label="youtube"
-            class="inline-flex h-6 w-6 items-center justify-center rounded-full text-xl text-neutral-300 duration-300 hover:bg-white hover:text-secondary-800"
+            class="inline-flex h-6 w-6 items-center justify-center rounded-full text-xl text-neutral-300 duration-300 hover:bg-white hover:text-main-800"
           >
             <i class="bx bxl-youtube"></i>
           </a>
@@ -1374,10 +1376,7 @@
       </div>
     </footer>
 
-    <!-- JAVASCRIPT -->
-    <!-- SWIPER JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- MAIN SCRIPT FILE -->
+    <!-- MAIN JS -->
     <script type="module" src="script.js"></script>
   </body>
 </html>

@@ -92,44 +92,6 @@ accordionItems.forEach((item) => {
   });
 });
 
-/* =================================== */
-/* ========== SWIPER JS (CAROUSEL) ========= */
-/* =================================== */
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  slidesPerView: 2,
-  spaceBetween: 30,
-
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-
-    640: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
-
-    768: {
-      slidesPerView: 5,
-      spaceBetween: 80,
-    },
-  },
-  speed: 4000,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-  freemode: true,
-  freeModeMomentum: false,
-});
-
 /* ================================== */
 /*========== TABBED CONTENT ==========*/
 /* ================================== */

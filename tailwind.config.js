@@ -21,7 +21,7 @@ module.exports = {
           500: "#f37e1c",
           600: "#d55d11", // main
           700: "#bd4b11",
-          800: "#963c16",
+          800: "#963c16", 
           900: "#793315",
           950: "#411809",
         },
@@ -37,6 +37,20 @@ module.exports = {
           800: "#214e4a", // main
           900: "#1f423e",
           950: "#0d2624",
+        },
+      },
+      animation: {
+        marquee: "marquee 25s linear infinite",
+        marquee2: "marquee2 25s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
         },
       },
     },
