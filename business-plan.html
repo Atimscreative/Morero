@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/logo/favicon-black-orange.svg"
+      type="image/x-icon"
+    />
+    <!-- Primary Meta Tags -->
+    <title>Business Plan — Morero</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOXICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="relative flex h-auto w-full items-center justify-center bg-hero bg-cover bg-center py-16"
+    >
+      <div class="wrapper flex items-center justify-center">
+        <h1 class="text-center text-3xl font-bold text-white">
+          Business Plan & PRD
+        </h1>
+      </div>
+
+      <button
+        id="logout"
+        class="absolute right-4 top-4 rounded-[8px] bg-main-500 px-4 py-2 text-sm text-white"
+      >
+        Logout
+      </button>
+    </section>
+
+    <!-- MAIN JS -->
+    <script>
+      if (sessionStorage.getItem("isLogin") !== "true") {
+        window.location.href = "login.html";
+      }
+
+      document.querySelector("#logout").addEventListener("click", () => {
+        sessionStorage.removeItem("isLogin");
+        window.location.href = "login.html";
+      });
+    </script>
+  </body>
+</html>

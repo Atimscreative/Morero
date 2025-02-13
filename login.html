@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/logo/favicon-black-orange.svg"
+      type="image/x-icon"
+    />
+    <!-- Primary Meta Tags -->
+    <title>Login — Morero</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOXICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="flex min-h-svh w-full items-center justify-center bg-hero bg-cover bg-center sm:min-h-[60vh] lg:h-screen"
+    >
+      <div class="wrapper flex items-center justify-center">
+        <form id="login" class="mx-auto flex max-w-lg flex-col items-center">
+          <label
+            for="password"
+            class="mb-3 block text-center text-2xl font-semibold text-white"
+            >Enter the password to <br />
+            visit the protected page</label
+          >
+          <div class="mt-8 flex">
+            <div class="relative">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                class="h-full border-0 focus:border-0 focus:outline-0 focus:ring-2 focus:ring-secondary-700"
+              />
+              <span
+                id="pw"
+                class="absolute right-2 top-3.5 cursor-pointer text-xs italic text-secondary-600 underline"
+                >show</span
+              >
+            </div>
+            <button
+              id="submit"
+              type="submit"
+              class="h-full bg-main-600 px-6 py-3 text-white"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- MAIN JS -->
+    <script>
+      // LOGIN
+      "use strict";
+      const form = document.querySelector("#login");
+      const show = document.querySelector("#pw");
+      const btnLogin = document.getElementById("submit");
+      const passwordInput = document.querySelector("#password");
+      console.log(form);
+
+      // passwordInput.addEventListener("change", (e) => {
+      //   console.log(e.target.value);
+      // });
+
+      show.addEventListener("click", (e) => {
+        const type =
+          passwordInput.getAttribute("type") === "password"
+            ? "text"
+            : "password";
+        passwordInput.setAttribute("type", type);
+        show.textContent = type === "password" ? "show" : "hide";
+      });
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const val = document.querySelector("#password").value;
+
+        if (val === "Morero123++") {
+          sessionStorage.setItem("isLogin", "true");
+          window.location.href = "business-plan.html";
+        } else {
+          alert("Incorrect password");
+        }
+
+        console.log(e.target, val);
+      });
+    </script>
+  </body>
+</html>

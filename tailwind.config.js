@@ -2,7 +2,7 @@
 // "./**/*.{html,js}",
 
 module.exports = {
-  content: ["./index.html", "./script.js"],
+  content: ["./index.html", "./script.js", "./*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
@@ -21,7 +21,7 @@ module.exports = {
           500: "#f37e1c",
           600: "#d55d11", // main
           700: "#bd4b11",
-          800: "#963c16", 
+          800: "#963c16",
           900: "#793315",
           950: "#411809",
         },
